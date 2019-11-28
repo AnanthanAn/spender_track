@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:spender_track/modals/transactions.dart';
 
-class TransactionList extends StatefulWidget {
-  @override
-  _TransactionListState createState() => _TransactionListState();
-}
+class TransactionList extends StatelessWidget {
 
-class _TransactionListState extends State<TransactionList> {
+  List<Transactions> _transactions ;
 
+  TransactionList(this._transactions);
 
   @override
   Widget build(BuildContext context) {
